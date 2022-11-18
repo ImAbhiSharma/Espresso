@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-{%load static%}
+<!-- {%load static%} -->
 <head>
     <meta charset="UTF-8">
     <title>profile card</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 <style>
-    .hero{
+    /* .hero{
         background-color: #ffffff;
         min-height: 40vh;
-        width: 60%;
+        width: 80%;
         color: #fff;
         position: relative;
-    }
+    } */
     .profile{
         position: relative;
-        top: 299px;
-        left: 130px;
+        top: 25px;
+        left: 25px;
         background-color: rgb(255, 255, 255);
         font-family: sans-serif;
         text-align: center;
         max-width: 200px;
-        box-shadow: 0 0 10px rgba(184, 4, 201, 0.832);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.832);
         padding: 20px
     }
 
     .profile__image {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         object-fit: cover;
-        border-radius: 50%;
+        border-radius: 30%;
         margin: 0 auto 20px auto;
         display: block;
     }
@@ -56,11 +56,29 @@
 <!-- <body bgcolor= #1d2026> -->
 <!-- <div class="hero"></div> -->
 <div class="profile">
-    <img src="{% static 'images/me.jpg'%}" class="profile__image" alt="me">
-    <div class="profile__name" > CHIRAG KATHPALIA</div>
-    <div class="profile__title"> Web Developer <br>at XYZ</div>
+    <img src="team/Abhi.png"profile__image" alt="me">
+    <div class="profile__name" > ABHI SHARMA</div>
+    <div class="profile__title"> Front-end Developer <br>I'm Chirag Kathpalia
+
+        Hey peeps, I'm Abhi. I'm into  tech, space, books, superheroes, animes and I always try to learn new things. The phrase "Jack of all trades and master of none" is what suits me best. I'm also into geopolitics and current affairs. Plus I'm a foodie and a gym-rat as well. I'm pursuing BTech CSE and you can find me on insta as that_soul_writer and on Linkdln as Abhi Sharma. I believe connections are the most important thing for your career plus your life as well, so I always intend to make new connections and meet new people. So what are you waiting for? Let's connect.;</div>
     <div class="profile__details">
-        <i class="material-icons">person</i> 3200 followers</div>
+        <p><button class="w3-button w3-light-grey w3-block" onclick=""><i class="fa fa-envelope"></i> Contact</button></p>
+        <i class="material-icons">person</i></div>
+        
+</div>
+
+<div class="profile">
+    <img src="team/Chirag.jpeg"profile__image" alt="me">
+    <div class="profile__name" > CHIRAG KATHPALIA</div>
+    <div class="profile__title"> Web Developer <br>I'm Chirag Kathpalia
+
+        👨‍💻I've been coding for nearly past 5 years. I'm a full stack web developer who loves to build full stack applications, keeping up with new technologies & helping people learn how to code. 
+        
+        💢When I'm not coding I'm a proud Otaku!.
+        My preferred weapons→ Python/Java, Vscode.</div>
+    <div class="profile__details">
+        <p><button class="w3-button w3-light-grey w3-block" onclick=""><i class="fa fa-envelope"></i> Contact</button></p>
+        <i class="material-icons">person</i></div>
         
 </div>
 </body>
