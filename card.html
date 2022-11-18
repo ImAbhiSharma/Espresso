@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <title>profile card</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<style>
+    .hero{
+        background-color: #ffffff;
+        min-height: 40vh;
+        width: 60%;
+        color: #fff;
+        position: relative;
+    }
+    .profile{
+        position: relative;
+        top: 299px;
+        left: 130px;
+        background-color: rgb(255, 255, 255);
+        font-family: sans-serif;
+        text-align: center;
+        max-width: 200px;
+        box-shadow: 0 0 10px rgba(184, 4, 201, 0.832);
+        padding: 20px
+    }
+
+    .profile__image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    .profile__name{
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .profile__title
+    {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 0.8em;
+    }
+    .profile__details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+</style>
+</head>
+<!-- <body bgcolor= #1d2026> -->
+<!-- <div class="hero"></div> -->
+<div class="profile">
+    <img src="{% static 'images/me.jpg'%}" class="profile__image" alt="me">
+    <div class="profile__name" > CHIRAG KATHPALIA</div>
+    <div class="profile__title"> Web Developer <br>at XYZ</div>
+    <div class="profile__details">
+        <i class="material-icons">person</i> 3200 followers</div>
+        
+</div>
+</body>
+</html>
